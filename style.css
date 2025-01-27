@@ -16,10 +16,26 @@ h1 {
     font-size: 1.8rem;
     margin: 0;
     padding: 20px;
-    background-color: #007BFF;
+    background-color: black;
     color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+input,textarea {
+    display: flex;
+
+}
+
+form {
+    background-color: bisque;
+    padding: 10px;
+
 }
