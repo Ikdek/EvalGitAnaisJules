@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#rgpd {
+    display: none;
+}
+
+#rgpd:checked + label {
+    color: rgba(128, 73, 0, 0.87);
+}
+
+#rgpd + label::before {
+    content: "⬜";
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#rgpd:checked + label::before {
+    content: "✅";
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 20px;
+    width: 125px;
+    height: 40px;
+    background-color: antiquewhite;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0d6c6;
+}
