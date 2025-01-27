@@ -10,7 +10,6 @@ body {
     height: 100vh;
 }
 
-
 h1 {
     text-align: center;
     font-size: 1.8rem;
@@ -29,13 +28,30 @@ li {
     color: black;
 }
 
-input,textarea {
+input, textarea {
     display: flex;
-
 }
 
 form {
     background-color: bisque;
     padding: 10px;
+}
 
+
+#rgpd {
+    display: none;
+}
+
+#rgpd:checked + label {
+    color: rgba(128, 73, 0, 0.87);
+}
+
+#rgpd + label::before {
+    content: "⬜";
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#rgpd:checked + label::before {
+    content: "✅";
 }
