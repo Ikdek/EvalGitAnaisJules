@@ -12,29 +12,29 @@
     <ul>
         <li>
             <label for="name">Votre nom :</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" title="Entrez votre nom complet" required />
         </li>
         <li>
             <label for="prenom">Votre prénom :</label>
-            <input type="text" id="prenom" />
+            <input type="text" id="prenom" title="Entrez votre prénom" required />
         </li>
         <li>
             <label for="mail">Votre mail :</label>
-            <input type="email" id="mail" />
+            <input type="email" id="mail" title="Entrez votre adresse email valide" required/>
         </li>
         <li>
             <label for="telephone">Votre n° téléphone :</label>
-            <input type="tel" id="telephone" />
+            <input type="tel" id="telephone" title="Entrez votre numéro de téléphone (format : 12-34-56-78)" required/>
         </li>
         <li>
             <label for="msg">Votre message :</label>
-            <textarea id="msg"></textarea>
+            <textarea id="msg" title="Écrivez ici votre message" required></textarea>
         </li>
         <li class="rgpd">
             <input type="checkbox" id="rgpd" />
-            <label for="rgpd">En cochant cette case, vous acceptez le RGPD.</label>
+            <label for="rgpd" title="Cochez pour accepter le RGPD" required>En cochant cette case, vous acceptez le RGPD.</label>
         </li>
-        <button>Confirmation</button>
+        <button title="Cliquez ici pour soumettre le formulaire">Confirmation</button>
     </ul>
 </form>
 </body>
